@@ -34,9 +34,8 @@ Floci provides the local AWS-compatible endpoint. Lambda code runs in Docker-man
 
 
 ## 🏗️ Architecture
-
 <p align="center">
-  <img src="media/architecture.svg" width="900" alt="AWS Serverless Event-Driven Playground architecture diagram">
+  <img src="media/architecture.png" width="900" alt="AWS Serverless Event-Driven Playground architecture diagram">
 </p>
 
 ## 🎯 Objective
@@ -146,7 +145,7 @@ The failure test uploads invalid JSON. The Lambda handler reports the failed SQS
 
 Watch the full end-to-end flow (S3 → EventBridge → SQS → Lambda → S3):
 
-<video src="media/script-demo-aws-serverless-event-driven.mp4" controls width="700"></video>
+<video src="https://github.com/user-attachments/assets/45fd7382-ed14-4c9c-8679-7c821fe52399" controls width="700"></video>
 
 1. Start Floci.
 2. Deploy the resources.

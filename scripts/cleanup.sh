@@ -14,7 +14,9 @@ awsx events remove-targets --rule "$RULE" --ids processing-queue >/dev/null 2>&1
 awsx events delete-rule --name "$RULE" >/dev/null 2>&1 || true
 for Q in omsl-serverless-events omsl-serverless-dlq; do
   URL="$(awsx sqs get-queue-url --queue-name "$Q" --query QueueUrl --output text 2>/dev/null || true)"
-  [[ -n "$URL" && "$URL" != "None" ]] && awsx sqs delete-queue --queue-url "$URL" >/dev/null || true
+  if [[ -n "$URL" && "$URL" != "None" ]]; then
+    awsx sqs delete-queue --queue-url "$URL" >/dev/null || true
+  fi
 done
 for B in omsl-serverless-input omsl-serverless-output; do
   awsx s3 rm "s3://$B" --recursive >/dev/null 2>&1 || true

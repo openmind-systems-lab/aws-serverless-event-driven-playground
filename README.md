@@ -35,7 +35,9 @@ Floci provides the local AWS-compatible endpoint. Lambda code runs in Docker-man
 
 ## 🏗️ Architecture
 
-![AWS Serverless Event-Driven Playground architecture](media/architecture.png)
+<p align="center">
+  <img src="media/architecture.svg" width="900" alt="AWS Serverless Event-Driven Playground architecture diagram">
+</p>
 
 ## 🎯 Objective
 

@@ -145,7 +145,7 @@ The failure test uploads invalid JSON. The Lambda handler reports the failed SQS
 
 Watch the full end-to-end flow (S3 → EventBridge → SQS → Lambda → S3):
 
-<video src="https://github.com/user-attachments/assets/45fd7382-ed14-4c9c-8679-7c821fe52399" controls width="700"></video>
+https://github.com/user-attachments/assets/45fd7382-ed14-4c9c-8679-7c821fe52399
 
 1. Start Floci.
 2. Deploy the resources.

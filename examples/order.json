@@ -1,0 +1,6 @@
+{
+  "orderId": "order-1001",
+  "customerId": "customer-42",
+  "items": [{"sku": "coffee-001", "quantity": 2}],
+  "currency": "EUR"
+}
